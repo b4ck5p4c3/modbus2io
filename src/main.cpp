@@ -37,10 +37,6 @@ void setup() {
 
   // configure holding registers at address 0x03
   ModbusRTUServer.configureHoldingRegisters(0x03, numHoldingRegisters);
-
-  ModbusRTUServer.coilWrite(DOOR_COIL_ADRESS, 0);
-  ModbusRTUServer.coilWrite(EXT_BUTTON_COIL_ADRESS, 1);
-  ModbusRTUServer.coilWrite(INT_BUTTON_COIL_ADRESS, 0);
 }
 
 
